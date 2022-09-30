@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/_16sdp"
+    android:paddingRight="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_16sdp">
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=">Hi! Let\'s track daily cumulative steps. Use the menu to explore additional actions." />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_text_view">
+        <android.example.health.common.logger.LogView
+            android:id="@+id/sample_logview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+    </ScrollView>
+</RelativeLayout>

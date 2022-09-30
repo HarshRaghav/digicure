@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_32sdp"
+    android:layout_marginLeft="@dimen/_14sdp"
+    android:layout_marginRight="@dimen/_14sdp"
+    tools:context=".PaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/razorpay_option"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:src="@drawable/razorpay_icon" />
+
+        <ImageView
+            android:id="@+id/razorpay_tick"
+            android:src="@drawable/check_icon"
+            android:layout_alignStart="@id/razorpay_option"
+            android:layout_alignParentStart="true"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center|left"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:text="Order Summary"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/largeText"
+        android:textSize="@dimen/_14ssp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:elevation="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center|left"
+            android:text="Consultancy Fees"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/largeText"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_view_consultancy_fees"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:maxLines="2"
+            android:text="₹400"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/largeText"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:elevation="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center|left"
+            android:text="Selected Slot"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/largeText"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_view_slot"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:maxLines="2"
+            android:text="6:30 PM"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/largeText"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/round_corner_button"
+        android:minHeight="@dimen/_40sdp"
+        android:text="Checkout"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:theme="@style/MaterialButton" />
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".medicineBox.MedicineDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/_16ssp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/medicine_image"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:src="@drawable/user_icon" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_view_medicine_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_18sdp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textColor="@color/largeText"
+                android:text="@string/MedicineDetails"
+                android:textSize="@dimen/_12ssp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_medicine_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:helperTextEnabled="true"
+                android:imeOptions="actionNext"
+                app:helperTextTextAppearance="@style/HelperTextLabel"
+                app:helperText="@string/MedicineNameHelper">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/medicine_details_name"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:hint="@string/MedicineName"
+                    android:textColor="@color/smallText"
+                    android:textSize="@dimen/_12ssp"
+                    android:inputType="text|textCapWords|textNoSuggestions" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_medicine_details_mrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:helperTextEnabled="true"
+                app:helperText="Please enter with currency type"
+                app:helperTextTextAppearance="@style/HelperTextLabel"
+                android:imeOptions="actionNext">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/medicine_details_mrp"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:hint="@string/MedicineMRP"
+                    android:textColor="@color/smallText"
+                    android:textSize="@dimen/_12ssp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_medicine_details_expiry_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:helperText="This cannot be changed later"
+                    app:helperTextTextAppearance="@style/HelperTextLabel"
+                    android:imeOptions="actionNext">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/medicine_details_expiry_date"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="0dp"
+                        android:hint="@string/MedicineExpiryDate"
+                        android:textColor="@color/smallText"
+                        android:textSize="@dimen/_12ssp"
+                        android:enabled="false"
+                        android:inputType="text|textCapWords|textNoSuggestions" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/medicine_details_expiry_calendar_image"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_baseline_edit_calendar_24"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_medicine_details_manufacture_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:helperText="This cannot be changed later"
+                    app:helperTextTextAppearance="@style/HelperTextLabel"
+                    android:imeOptions="actionNext">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/medicine_details_manufacture_date"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="0dp"
+                        android:hint="@string/MedicineManufactureDate"
+                        android:textColor="@color/smallText"
+                        android:textSize="@dimen/_12ssp"
+                        android:enabled="false"
+                        android:inputType="text|textCapWords|textNoSuggestions" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/medicine_details_manufacture_calendar_image"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_baseline_edit_calendar_24"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_medicine_details_manufacturer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:helperTextEnabled="false"
+                android:imeOptions="actionNext">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/medicine_details_manufacturer"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:hint="@string/MedicineManufacturer"
+                    android:textColor="@color/smallText"
+                    android:textSize="@dimen/_12ssp"
+                    android:inputType="text|textCapWords|textNoSuggestions" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/medicine_details_next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardElevation="@dimen/_5sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@drawable/round_corner_button"
+                android:minHeight="@dimen/_40sdp"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:theme="@style/MaterialButton" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

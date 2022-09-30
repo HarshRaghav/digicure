@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".medicineBox.ContactDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/_16ssp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_view_contact_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_18sdp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textColor="@color/largeText"
+                android:text="@string/ContactDetails"
+                android:textSize="@dimen/_12ssp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_contact_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:helperTextEnabled="false"
+                android:imeOptions="actionNext">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_details_name"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:hint="@string/ContactName"
+                    android:textColor="@color/smallText"
+                    android:textSize="@dimen/_12ssp"
+                    android:inputType="text|textCapWords|textNoSuggestions" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_contact_details_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:helperTextEnabled="false"
+                android:imeOptions="actionNext">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_details_email"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:hint="@string/ContactEmail"
+                    android:textColor="@color/smallText"
+                    android:textSize="@dimen/_12ssp"
+                    android:inputType="text|textCapWords|textNoSuggestions" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_contact_details_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:helperTextEnabled="false"
+                android:imeOptions="actionNext">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_details_mobile"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:hint="@string/ContactMobileNumber"
+                    android:textColor="@color/smallText"
+                    android:textSize="@dimen/_12ssp"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_contact_details_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:helperTextEnabled="false"
+                android:imeOptions="actionNext">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_details_city"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:hint="@string/ContactCity"
+                    android:textColor="@color/smallText"
+                    android:textSize="@dimen/_12ssp"
+                    android:inputType="text|textCapWords|textNoSuggestions" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_contact_details_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:helperTextEnabled="false"
+                android:imeOptions="actionNext">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_details_state"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:hint="@string/ContactState"
+                    android:textColor="@color/smallText"
+                    android:textSize="@dimen/_12ssp"
+                    android:inputType="text|textCapWords|textNoSuggestions" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_contact_details_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:helperTextEnabled="false"
+                android:imeOptions="actionNext">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_details_country"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:hint="@string/ContactCountry"
+                    android:textColor="@color/smallText"
+                    android:textSize="@dimen/_12ssp"
+                    android:inputType="text|textCapWords|textNoSuggestions" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/contact_details_save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardElevation="@dimen/_5sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@drawable/round_corner_button"
+                android:minHeight="@dimen/_40sdp"
+                android:text="POST"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:theme="@style/MaterialButton" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

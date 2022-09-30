@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/sleep_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/sleep_start_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/sleep_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Time"
+        app:layout_constraintTop_toBottomOf="@id/sleep_start"
+        app:layout_constraintRight_toLeftOf="@id/sleep_start_day"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/sleep_stop"
+        android:textSize="@dimen/_15sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/sleep_start_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        app:layout_constraintTop_toBottomOf="@id/sleep_start"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/sleep_start_time"
+        app:layout_constraintBottom_toTopOf="@id/sleep_stop"
+        android:textSize="@dimen/_15sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@id/sleep_start_time"
+        app:layout_constraintBottom_toTopOf="@id/sleep_stop"
+        android:background="@color/black"/>
+
+
+
+    <TextView
+        android:id="@+id/sleep_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Stop"
+        app:layout_constraintTop_toBottomOf="@id/sleep_start_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/sleep_stop_time"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/sleep_stop_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP TIME"
+        app:layout_constraintTop_toBottomOf="@id/sleep_stop"
+        app:layout_constraintBottom_toTopOf="@id/sleep_save"
+        app:layout_constraintRight_toLeftOf="@id/sleep_stop_day"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="@dimen/_15sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/sleep_stop_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP DATE"
+        app:layout_constraintTop_toBottomOf="@id/sleep_stop"
+        app:layout_constraintBottom_toTopOf="@id/sleep_save"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/sleep_stop_time"
+        android:textSize="@dimen/_15sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/sleep_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_margin="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

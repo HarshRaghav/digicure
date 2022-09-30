@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="@dimen/_144sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_view_user_image"
+                android:layout_width="@dimen/_56sdp"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/app_icon"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_view_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Harsh Raghav"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_view_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:gravity="center"
+                android:text="(SS001)"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:textSize="@dimen/_12sdp"></androidx.appcompat.widget.AppCompatTextView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
