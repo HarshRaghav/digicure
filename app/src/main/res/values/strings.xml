@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Digicure</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="welcomeMessage">We are deeply committed to provide you with the best healthcare facilities possible. and help you in living a Happy and Healthy Life</string>
+    <string name="loginWelcome">Already a user?</string>
+    <string name="signupWelcome">Create New Account</string>
+
+    <string name="login">Login</string>
+    <string name="emailIDLogin">Email ID</string>
+    <string name="passwordLogin">Password</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="forgotPasswordLogin">Forgot Password?</string>
+
+    <string name="ForgotPassword">Forgot Password</string>
+    <string name="emailForgotPassword">Email ID</string>
+    <string name="sendBTNForgotPassword">SEND</string>
+
+    <string name="HeadingSignup">Create Account</string>
+    <string name="fullNameSignup">Full Name*</string>
+    <string name="fullNameHelper">Mention your name as mentioned in the ID proof. </string>
+    <string name="emailIDSignup">Email ID*</string>
+    <string name="mobileSignup">Mobile*</string>
+    <string name="passwordSignup">Password*</string>
+    <string name="drivingSchoolNameSignup">Driving School Name</string>
+    <string name="drivingSchoolIDSignup">Driving School ID</string>
+    <string name="nextBTNSignup">NEXT</string>
+
+    <string name="profileUserName">User Name</string>
+    <string name="profileUserID">User ID</string>
+    <string name="profilePersonalInfoHeading">Personal Info</string>
+    <string name="profileDOBHeading">Date of Birth</string>
+    <string name="profileAadharPassportNoHeading">Aadhar/Passport No.</string>
+    <string name="profileEmailIDHeading">Email ID</string>
+    <string name="profilePhoneNumberHeading">Phone Number</string>
+    <string name="profileDrivingSchoolNameHeading">Driving School Name</string>
+    <string name="profileDrivingSchoolIDHeading">Driving School ID</string>
+
+    <string name="MedicineDetails">Medicine Details</string>
+    <string name="MedicineName">Medicine Name</string>
+    <string name="MedicineNameHelper">Please enter the full name of the Medicine.</string>
+    <string name="MedicineManufacturer">Medicine Manufacturer</string>
+    <string name="MedicineMRP">Medicine MRP</string>
+    <string name="MedicineManufactureDate">Medicine Manufacture Date</string>
+    <string name="MedicineExpiryDate">Medicine Expiry Date</string>
+
+    <string name="ContactDetails">Contact Details</string>
+    <string name="ContactName">Contact Name</string>
+    <string name="ContactEmail">Contact Email</string>
+    <string name="ContactMobileNumber">Contact Mobile No.</string>
+    <string name="ContactCountry">Contact Country</string>
+    <string name="ContactCity">Contact City</string>
+    <string name="ContactState">Contact State</string>
+
+    <string name="UpdateProfile">Update Profile</string>
+    <string name="fullNameUpdateProfile">Full Name</string>
+    <string name="emailIDUpdateProfile">Email ID</string>
+    <string name="mobileUpdateProfile">Mobile</string>
+    <string name="DOBUpdateProfile">Date of Birth</string>
+    <string name="drivingSchoolNameUpdateProfile">Driving School Name</string>
+    <string name="drivingSchoolIDUpdateProfile">Driving School ID</string>
+    <string name="saveChangesBTNUpdateProfile">Save Changes</string>
+
+    <string name="ChangePassword">Change Password</string>
+    <string name="emailChangePassword">Email</string>
+    <string name="oldPasswordChangePassword">Old Password</string>
+    <string name="newPasswordChangePassword">New Password</string>
+    <string name="confirmNewPasswordChangePassword">Confirm New Password</string>
+    <string name="saveChangesBTNChangePassword">SAVE</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/appointment_booking</item>
+        <item>@string/medicine_box</item>
+        <item>@string/illness_prediction</item>
+        <item>@string/covid_faqs</item>
+        <item>@string/health_tracker</item>
+        <item>@string/reset_password</item>
+        <item>@string/my_profile</item>
+        <item>@string/nav_item_logout</item>
+    </string-array>
+    <string name="appointment_booking">Appointment Booking</string>
+    <string name="medicine_box">Medicine Donation Box</string>
+    <string name="illness_prediction">Illness Prediction</string>
+    <string name="covid_faqs">Covid-19 FAQs</string>
+    <string name="health_tracker">Health Tracker</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="my_profile">My Profile</string>
+    <string name="nav_item_about_us">About Us</string>
+    <string name="nav_item_privacy_policy">Privacy Policy</string>
+    <string name="nav_item_contact_us">Contact Us</string>
+    <string name="nav_item_logout">Logout</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="medicine_box_all">Medicine Box</string>
+    <string name="medicine_box_mine">My Posts</string>
+
+    <string name="next">NEXT</string>
+    <string name="save">SAVE</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="try_again">Something went wrong, please try again </string>
+    <string name="contact_to_support_team">Contact to support team</string>
+    <string name="please_try_again">Please try again</string>
+    <string name="data_not_available">Data Not Available</string>
+    <string name="entered_used_id_or_password_is_not_valid">Entered User ID or password is not valid</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="permission_rationale">Location data is used as part of the Google Fit API</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="read_step_data">Read step data</string>
+    <string name="rupee_symbol">₹</string>
+</resources>

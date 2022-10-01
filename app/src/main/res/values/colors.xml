@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#414244</color>
+    <color name="buttonGray">#D2D2D2</color>
+    <color name="colorPrimary">#04a1e9</color>
+    <color name="colorPrimaryDark">#005392</color>
+    <color name="colorAccent">#6658a6</color>
+    <color name="smallText">#6658a6</color>
+    <color name="largeText">#3c2372</color>
+    <color name="black">#000000</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorDisable">#999999</color>
+    <color name="colordivider">#DDDCDE</color>
+    <color name="dialog_message_color">#838383</color>
+    <color name="dialog_btn_ok_color">#13a34e</color>
+    <color name="dialog_btn_bg_color">#fd7172</color>
+    <color name="btn_pressed_color_selector">#077fab</color>
+    <color name="btn_pressed_stroke_color">#24a5d5</color>
+    <color name="btn_normal_color_selector">#24a5d5</color>
+    <color name="number_plate_green">#008000</color>
+    <color name="number_plate_yellow">#FFF450</color>
+    <color name="number_plate_white">#FFFFFF</color>
+    <color name="number_plate_black">#000000</color>
+    <color name="number_plate_ind">#1F2765</color>
+    <color name="blue">#00abea</color>
+    <color name="white">#ffffff</color>
+    <color name="brown">#5E341E</color>
+    <color name="dark_orange">#ffd31d</color>
+    <color name="lightGrey">#ffdfdfdf</color>
+    <color name="tomato_green">#ff6600</color>
+    <color name="tomato_red">#ffe6412c</color>
+    <color name="green_dark">#008000</color>
+    <color name="orderReview_orderBtn">#dddddd</color>
+    <color name="orderReview_orderBtn_disabled">#ffd2d2d2</color>
+    <color name="orderReview_priceHeading">#ff585858</color>
+    <color name="previousOrder_orderId_title">#ff9a9a9a</color>
+    <color name="brand_green">#ff6600</color>
+    <color name="product_title">#ff000000</color>
+    <color name="orderReview_bg">#e6ffffff</color>
+    <color name="orderDetail_addressTitle">#ff000000</color>
+    <color name="orderDetail_existInfo">#ff676666</color>
+    <color name="orderDetail_paymentsTitle">#ff8c8c8c</color>
+    <color name="orderDetail_saleInfo">#ff212121</color>
+    <color name="login_isd_code">#ffffffff</color>
+    <color name="timeSlot_selectTime">#ff65666b</color>
+    <color name="orderConfirmation_summaryDetail">#ff4a4a4a</color>
+    <color name="orderConfirmation_summaryItems">#ff999999</color>
+    <color name="button_tint">#0070c0</color>
+    <color name="textcolor">#ff333333</color>
+    <color name="shadow">#66000000</color>
+    <color name="Grey">#E0E0E0</color>
+    <color name="green">#00ff00</color>
+    <color name="red">#ff0000</color>
+    <color name="orange">#ff6600</color>
+    <color name="teal">#008080</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#727272</color>
+    <color name="task_allocation_border_color">#BCBCBC</color>
+    <color name="task_allocation_text_color">#777777</color>
+    <color name="darkDeepOrange">#E64A19</color>
+    <color name="maroon">#6c2436</color>
+    <color name="ornageshade">#f5b595</color>
+    <color name="success_green">#1FD189</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="recycle_view_bg_color">#FAFAFA</color>
+    <color name="transparent">#59c3c3c3</color>
+
+
+
+    <color name="help_button_view">#ffcccccc</color> <!-- help button view background color -->
+    <color name="help_view">#ff404040</color> <!-- background color for entire help view -->
+    <color name="result_minor_text">#ffc0c0c0
+    </color> <!-- source language text/label text color. For example, "OCR English" -->
+    <color name="result_text">#ffffffff</color> <!-- OCR result text color -->
+    <color name="result_view">#b0000000</color> <!-- result view background color -->
+    <color name="status_text">#ffffffff
+    </color> <!-- status_view_top/status_view_bottom text color -->
+    <color name="status_top_text_background">#ffffffff
+    </color> <!-- status_view_top text background color -->
+    <color name="translation_text">#00ccff</color> <!-- translation text color -->
+    <color name="viewfinder_corners">#ffffffff</color> <!-- four corner elements for viewfinder -->
+    <color name="viewfinder_frame">#ffd6d6d6</color> <!-- viewfinder rectangle -->
+    <color name="viewfinder_mask">#60000000</color>  <!-- viewfinder exterior darkened area -->
+    <color name="text_color_hint">#ff0000</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="orange_text">#f68320</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+</resources>
